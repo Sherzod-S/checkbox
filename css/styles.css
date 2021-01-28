@@ -1,0 +1,48 @@
+html { 
+  box-sizing: border-box;  
+ }  
+ *, 
+ *::before   
+ *::after { 
+  box-sizing: inherit;
+ } 
+body { 
+   margin: 0; 
+   padding: 0;   
+   
+ }   
+ .visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+ form { 
+   display: flex;  
+   /* justify-content: center; 
+   align-items: center;   */
+   flex-direction: column;
+   margin-top: 20%; 
+   margin-left: 45%;
+ } 
+ .controller { 
+   display: inline-block; 
+   width: 30px; 
+   height: 30px; 
+   border: 1px solid grey; 
+   border-radius: 5px;
+ }  
+ .chackbox-name { 
+   margin-left: 10px; 
+   font-size: 26px;
+ }
+ input:checked + .controller  { 
+   /* background-color: blueviolet;  */
+   background-image: url(../img/table-tennis.svg);
+ }
+ input:disabled + .controller  { 
+   background-color: rgb(35, 177, 158);
+ }
